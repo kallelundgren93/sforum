@@ -1,0 +1,24 @@
+<%= render 'layouts/headerin' %>
+<% if @category.categories.empty? %>
+  <div class="categories padding-top">
+    <div class="button">
+      <%= link_to "Home", categories_path, class: :button %>
+    </div>
+  </div>
+<% else %>
+  <h1 class="size18">Categories</h1>
+    <div class="categories">
+      <div class="button">
+        <%= link_to "Home", categories_path, class: :button %>
+      </div>
+      <%= render @category.categories %>
+    </div>
+<% end %>
+<h1 class="size18 no-center">Topics</h1>
+<% if @category.topics.empty? %>
+  <%= link_to "+ new topic", new_topic_path(category_id: @category.id), class: :new_topic %>
+  <p>No topics in this category</p>
+<% else %>
+  <%= link_to "+ new topic", new_topic_path(category_id: @category.id), class: :new_topic %>
+  <%= render @category.topics %>
+<% end %>

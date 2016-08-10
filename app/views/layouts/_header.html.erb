@@ -1,0 +1,26 @@
+<header class="header">
+  <section class="statusbar">
+    <% if signed_in? %>
+      <p>
+      <%= current_user.email %>
+      <%= link_to "Logout", destroy_user_session_path, method: :delete, class: :redlink %>
+        <%if current_user.admin? %>
+          <%=  link_to(image_tag("user-1.png", size: "32x32", alt: "Admin", class:"status-logo"), "/admin") %>
+        <% else %>
+          <%=  image_tag("user.png", size: "32x32", alt: "User", class: "status-logo") %>
+        <% end %>
+      <% else %>
+      <%= link_to "Login", new_user_session_path, class: :greenlink %>
+      </p>
+    <% end %>
+    <div class="justify-center">
+      <p><%= link_to(image_tag("saitslogo.png", size: "300x150", alt: "SAITS", class: "saits-logo"), root_path, {class: "saits-logo"}) %></p>
+    </div>
+    <div class="justify-center">
+      <h1 class="color-green">s</h1><h1 class="color-white">Forum</h1>
+    </div>
+    <div class="justify-center">
+      <%= render 'layouts/navbar' %>
+    </div>
+  </header>
+</section>

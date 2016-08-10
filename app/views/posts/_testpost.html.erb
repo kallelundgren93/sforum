@@ -1,0 +1,7 @@
+
+<% @topic.posts.by_date.each do |post| %>
+
+  <p><%= post.body %>
+  - by <%= post.user.email %> <%= post.created_at.to_s(:short) %></p>
+
+  <%end %>

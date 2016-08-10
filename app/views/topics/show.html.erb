@@ -1,0 +1,22 @@
+<%= render 'layouts/headerin'%>
+  <div class="categories">
+    <div class="button padding-top ">
+      <%= link_to "Home", categories_path, class: :button %>
+    </div>
+  </div>
+<div class="justify-center">
+  <div class="post-content">
+      <h2 class="size3">
+        <%= @topic.name %>
+      </h2>
+      <p class="size14">
+        <%= @topic.body %>
+      </p>
+      <p class="size08">
+        written by: <%= @topic.user.email %>
+      </p>
+      <%= render 'posts/form' %>
+      <h2>Replies</h2>
+    <%= render 'posts/testpost'  %>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<%# postsform %>
+<h2>Reply</h2>
+<%= form_for(Post.new(topic: @topic), remote: false) do |form| %>
+  <%= form.hidden_field :topic_id %>
+  <%= form.text_area :body, cols:"70", rows: "5", class: :input_form %> <br>
+  <%= form.submit 'Create Post', class: :submit_button %>
+<% end %>
