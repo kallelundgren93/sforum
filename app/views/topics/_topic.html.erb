@@ -1,3 +1,7 @@
-<p>
+<div class="topics-card">
+<p class="no-margin no-deco">
   <%= link_to topic.name, topic %>
+  <br><%= topic.posts.count %> Posts
+  <br><%= topic.user.email %>
 </p>
+</div>

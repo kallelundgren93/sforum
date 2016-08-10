@@ -1,0 +1,10 @@
+<%# topic form %>
+<h2> New topic </h2>
+<%= form_for @topic do |form| %>
+  <%= form.hidden_field :category_id %>
+  <%= form.label :title%><br>
+  <%= form.text_field :name, class: :input_form %><br>
+  <%= form.label :message %> <br>
+  <%= form.text_area :body, cols:"50", rows: "20", class: :input_form %><br>
+  <%= form.submit 'Create Topic', class: :submit_button  %>
+<% end %>

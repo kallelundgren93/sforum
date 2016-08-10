@@ -1,5 +1,19 @@
-<div class="header">
-  <%= link_to "Login", new_user_session_path %>
-</div>
-
-<%= render @categories %>
+<%= render "layouts/header" %>
+<section id="page-categories">
+  <h1>Categories</h1>
+    <div class="categories">
+      <%= render @categories %><br>
+    </div>
+</section>
+<section id="page-topics">
+  <h2>Latest Topics:</h2>
+    <div class="topics">
+      <%= render @topics %>
+    </div>
+</section>
+<section id="page-posts">
+  <h2 class="no-margin">Latest Posts:</h2>
+    <div class="posts">
+      <%= render @posts %>
+    </div>
+</section>

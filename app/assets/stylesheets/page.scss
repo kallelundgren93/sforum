@@ -1,0 +1,99 @@
+.header{
+  background-color: #093145;
+  width: 100%;
+  height: 40em;
+}
+.header a{
+  text-decoration: none;
+  padding-left: 10px;
+}
+.header-in-forum{
+  background-color: #093145;
+  width: 100%;
+  height: 20em;
+}
+.header-in-forum a{
+  text-decoration: none;
+  padding-left: 10px;
+}
+.redlink{
+  color: red;
+}
+.greenlink{
+  color: white;
+  display:flex;
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: 1.5em;
+}
+.header p{
+  color: white;
+  display:flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  padding: 10px;
+  font-size: 1.4em;
+}
+.header-in-forum p{
+  color: white;
+  display:flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  padding: 10px;
+  font-size: 1.4em;
+}
+
+.header-title{
+  color: white;
+  font-weight: bold;
+}
+.header-title-first{
+  color: #C02F1D;
+}
+.statusbar{
+  height: 44px;
+}
+.status-logo{
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10px;
+  margin-top: -8px;
+  height: 1.5em;
+  width: 1.5em;
+}
+.saits-logo{
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+.saits-logo-nomargin{
+  display: flex;
+  justify-content: center;
+  margin-top: -5em;
+}
+.justify-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.color-green{
+  color: #00e673;
+  font-size: 2.3em;
+}
+.color-white{
+  color: white;
+  font-size: 2.3em;
+}
+.size08{
+  font-size: 0.8em;
+}
+.size3{
+  font-size: 3em;
+}
+.size14{
+  font-size: 1.4em;
+}
+.turn-left{
+  justify-content: flex-start;;
+  align-items: flex-start;;
+}

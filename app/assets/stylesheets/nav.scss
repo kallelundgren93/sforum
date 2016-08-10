@@ -1,0 +1,18 @@
+.nav-box{
+  margin-top: 40px;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.menu li{
+  list-style: none;
+  margin-left: 20px;
+}
+.menu a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}

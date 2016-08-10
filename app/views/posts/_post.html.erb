@@ -1,0 +1,7 @@
+<div class="posts-card">
+<p class="no-margin">
+  <%= link_to post.body, post %><br>
+  <span class="text-small">Topic: <%= link_to post.topic.name, post.topic%><br>
+  Author: <%= post.user.email %></span>
+</p>
+</div>
